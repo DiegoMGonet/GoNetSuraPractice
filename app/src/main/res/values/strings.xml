@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">El Super</string>
+    <string name="kp_main_title">Productos</string>
+    <string name="kp_add">Agregar</string>
+    <string name="kp_remove">Quitar</string>
+    <string name="kp_details">Detalles</string>
+    <string name="kp_coming_soon">En construcción.</string>
+
+    <string name="kp_favorites_no_items">No hay favoritos, debes de agregar al menos uno.</string>
+</resources>

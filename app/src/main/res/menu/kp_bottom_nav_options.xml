@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home_option"
+        android:icon="@drawable/kp_ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/menu_favorites_option"
+        android:icon="@drawable/kp_ic_favorites"
+        android:title="Favoritos"
+        />
+    <item
+        android:id="@+id/menu_settings_option"
+        android:icon="@drawable/kp_ic_settings"
+        android:title="Configuración"/>
+</menu>
