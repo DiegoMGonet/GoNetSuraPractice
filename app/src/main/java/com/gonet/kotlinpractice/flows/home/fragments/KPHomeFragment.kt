@@ -13,7 +13,6 @@ import com.gonet.kotlinpractice.flows.home.adapter.KPProductAdapter
 import com.gonet.kotlinpractice.flows.home.states.KPProductItemAction
 import com.gonet.kotlinpractice.flows.home.states.KPQueryProductsState
 import com.gonet.kotlinpractice.flows.home.viewmodels.KPHomeViewModel
-import com.gonet.kotlinpractice.general.extensions.getJsonDataFromAsset
 import com.gonet.kotlinpractice.general.models.Product
 import kotlinx.coroutines.flow.collectLatest
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -42,9 +41,6 @@ class KPHomeFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         updateNumberItems()
-
-        val jsonString = getJsonDataFromAsset(requireContext(), "example.json")
-        println("----------------------El json: $jsonString")
 
         lifecycleScope.launchWhenStarted {
             homeViewModel.uiState.collectLatest {
